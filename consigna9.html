@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consigna 9</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="nombreCompleto">Nombre Completo:</label>
+            <input type="text" id="nombreCompleto" name="nombreCompleto" minlength="2" maxlength="200" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$" required>
+        </div>
+        <div>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="18" max="120" required>
+        </div>
+        <div>
+            <label for="nacionalidad">Nacionalidad:</label>
+            <select name="nacionalidad" id="nacionalidad" required>
+                <option value="">Elegir una nacionalidad</option>
+                <option value="argentina">Argentina</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="chile">Chile</option>
+                <option value="paraguay">Paraguay</option>
+                <option value="bolivia">Bolivia</option>
+                <option value="brasil">Brasil</option>
+                <option value="otra">Otra</option>
+            </select>
+        </div>
+        <div>
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" min="1904-01-01" max="2006-12-31" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" minlength="11" maxlength="100" pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" required>
+        </div>
+        <div>
+            <label>Sexo:</label><br>
+
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="sexo" value="masculino" required><br>
+      
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="femenino" name="sexo" value="femenino"><br>
+      
+            <label for="otro">Otro</label>
+            <input type="radio" id="otro" name="sexo" value="otro"><br>
+        </div>
+        <div>
+            <label>¿Cuál de los siguientes dispositivos tiene en su hogar? (marque todos los que tenga)</label><br>
+
+            <input type="checkbox" name="dispositivos" id="television" value="television">
+            <label for="television">Television</label><br>
+            
+            <input type="checkbox" name="dispositivos" id="celular" value="celular">
+            <label for="celular">Celular</label><br>
+            
+            <input type="checkbox" name="dispositivos" id="tablet" value="tablet">
+            <label for="tablet">Tablet</label><br>
+            
+            <input type="checkbox" name="dispositivos" id="smartTV" value="smartTV">
+            <label for="smartTV">Smart TV</label><br>
+            
+            <input type="checkbox" name="dispositivos" id="playstation" value="playstation">
+            <label for="playstation">PlayStation</label><br>
+            
+            <input type="checkbox" name="dispositivos" id="pc" value="pc">
+            <label for="pc">PC</label><br>
+            
+            <input type="checkbox" name="dispositivos" id="ninguno" value="ninguno">
+            <label for="ninguno">Ninguno</label><br>
+        </div>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
