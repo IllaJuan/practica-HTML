@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consigna 7</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="nombreCompleto">Nombre Completo:</label>
+            <input type="text" id="nombreCompleto" name="nombreCompleto" minlength="2" maxlength="200" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$" required>
+        </div>
+        <div>
+            <label for="nacionalidad">Nacionalidad:</label>
+            <select name="nacionalidad" id="nacionalidad" required>
+                <option value="">Elegir una nacionalidad</option>
+                <option value="argentina">Argentina</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="ecuador">Ecuador</option>
+                <option value="venezuela">Venezuela</option>
+                <option value="otra">Otra</option>
+            </select>
+        </div>
+        <div>
+            <label for="fechaInscripcion">Fecha de Inscripción:</label>
+            <input type="date" id="fechaInscripcion" name="fechaInscripcion" min="2011-01-01" max="2024-12-31" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" minlength="11" maxlength="100" pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" required>
+        </div>
+        <div>
+            <label>¿Usted es beneficiario de alguna beca de estudio?</label>
+
+            <label for="becaAfirmativo">Sí</label>
+            <input type="radio" name="beca" id="becaAfirmativo" value="si" required>
+
+            <label for="becaNegativo">No</label>
+            <input type="radio" name="beca" id="becaNegativo" value="no">
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
