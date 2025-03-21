@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Juan Illa">
+    <meta name="description" content="Creación de un formulario de inscripción">
+    <meta name="keywords" content="formulario, HTML">
+    <title>Consigna 7</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <form action="">
+            <label for="userName">Nombre:</label>
+            <input type="text" name="userName" id="userName" placeholder="Ingrese su nombre" minlength="2" maxlength="30" required="required">
+
+            <label for="userSurname">Apellido:</label>
+            <input type="text" name="userSurname" id="userSurname" placeholder="Ingrese su apellido" minlength="2" maxlength="30" required="required">
+
+            <label for="userAge">Edad:</label>
+            <input type="number" name="userAge" id="userAge" placeholder="Ingrese su edad" min="18" max="100" required="required">
+
+            <label for="userNationality">Nacionalidad:</label>
+            <select name="userNationality" id="userNationality" required="required">
+                <option value="">Elija su nacionalidad</option>
+                <option value="argentina">Argentina</option>
+                <option value="paraguay">Paraguay</option>
+                <option value="bolivia">Bolivia</option>
+            </select>
+
+            <label for="userInscription">Fecha de inscripción:</label>
+            <input type="date" name="userInscription" id="userInscription" required="required">
+            
+            <label for="userEmail">Correo electrónico:</label>
+            <input type="email" name="userEmail" id="userEmail" required="required">
+            
+            <label for="" required>Posee beca de estudio:</label>
+            <label for="yes">Sí</label><input type="radio" name="userScholarship" id="yes" value="yes" required>
+            <label for="no">No</label><input type="radio" name="userScholarship" id="no" value="no">
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>
